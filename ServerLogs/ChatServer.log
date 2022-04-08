@@ -1,0 +1,25 @@
+2022-04-08 22:15:08,800 [main] INFO  pl.kl.chat_app.server.Server  - Server is listening on port: 9999
+2022-04-08 22:15:12,275 [main] INFO  pl.kl.chat_app.server.Server  - New connection established
+2022-04-08 22:15:15,994 [main] INFO  pl.kl.chat_app.server.Server  - New connection established
+2022-04-08 22:15:19,857 [main] INFO  pl.kl.chat_app.server.Server  - New connection established
+2022-04-08 22:15:22,912 [pool-1-thread-1] INFO  pl.kl.chat_app.server.ClientHandler  - Jacek has connected and has joined general channel
+2022-04-08 22:15:26,666 [pool-1-thread-2] INFO  pl.kl.chat_app.server.ClientHandler  - Darek has connected and has joined general channel
+2022-04-08 22:15:30,649 [pool-1-thread-3] INFO  pl.kl.chat_app.server.ClientHandler  - Wojtek has connected and has joined general channel
+2022-04-08 22:16:14,431 [pool-1-thread-2] INFO  pl.kl.chat_app.server.ClientHandler  - Darek has joined priv channel
+2022-04-08 22:16:25,801 [pool-1-thread-1] INFO  pl.kl.chat_app.server.ClientHandler  - Jacek has joined priv channel
+2022-04-08 22:16:33,706 [pool-1-thread-3] INFO  pl.kl.chat_app.server.ClientHandler  - Wojtek has joined priv channel
+2022-04-08 22:16:54,946 [pool-1-thread-3] INFO  pl.kl.chat_app.server.ClientHandler  - Wojtek has started to uploading file java.pdf
+2022-04-08 22:16:54,970 [pool-1-thread-3] INFO  pl.kl.chat_app.server.ClientHandler  - File java.pdf has been uploaded by Wojtek
+2022-04-08 22:17:07,464 [pool-1-thread-2] INFO  pl.kl.chat_app.server.ClientHandler  - Darek has started to downloading file java.pdf
+2022-04-08 22:17:07,485 [pool-1-thread-2] INFO  pl.kl.chat_app.server.ClientHandler  - File java.pdf has been downloaded by Darek
+2022-04-08 22:17:23,940 [pool-1-thread-1] INFO  pl.kl.chat_app.server.ClientHandler  - Jacek has started to downloading file java.pdf
+2022-04-08 22:17:23,959 [pool-1-thread-1] INFO  pl.kl.chat_app.server.ClientHandler  - File java.pdf has been downloaded by Jacek
+2022-04-08 22:17:52,019 [pool-1-thread-1] INFO  pl.kl.chat_app.server.ClientHandler  - Jacek has left priv channel
+2022-04-08 22:17:52,019 [pool-1-thread-1] INFO  pl.kl.chat_app.server.ClientHandler  - Jacek has joined general channel
+2022-04-08 22:18:03,099 [pool-1-thread-2] INFO  pl.kl.chat_app.server.ClientHandler  - Darek has left priv channel
+2022-04-08 22:18:03,099 [pool-1-thread-2] INFO  pl.kl.chat_app.server.ClientHandler  - Darek has joined general channel
+2022-04-08 22:18:14,481 [pool-1-thread-3] INFO  pl.kl.chat_app.server.ClientHandler  - Wojtek has left priv channel
+2022-04-08 22:18:14,481 [pool-1-thread-3] INFO  pl.kl.chat_app.server.ClientHandler  - Wojtek has joined general channel
+2022-04-08 22:18:55,248 [pool-1-thread-2] INFO  pl.kl.chat_app.server.ClientHandler  - Darek has disconnected
+2022-04-08 22:19:02,175 [pool-1-thread-3] INFO  pl.kl.chat_app.server.ClientHandler  - Wojtek has disconnected
+2022-04-08 22:19:15,238 [pool-1-thread-1] INFO  pl.kl.chat_app.server.ClientHandler  - Jacek has disconnected
