@@ -222,12 +222,16 @@ public class ClientHandler implements Runnable {
     }
 
     private void handleChannelCreateOrJoin(String channel) {
-        channels.addChannel(channel);
-        activeChannel = channel;
-        log.info("{} has joined {} channel", username, activeChannel);
-        final String messageFormat = String.format("Server -> %s has joined %s channel", username, channel);
-        clientHandlers.broadcastMessage(messageFormat, channel);
-        syncChannel();
+        if (channel.isEmpty() || channel.isBlank()) {
+            printMessage("Server -> Channel you have entered is empty, please enter not empty channnel");
+        } else {
+            activeChannel = channel.trim();
+            channels.addChannel(activeChannel);
+            log.info("{} has joined {} channel", username, activeChannel);
+            final String messageFormat = String.format("Server -> %s has joined %s channel", username, activeChannel);
+            clientHandlers.broadcastMessage(messageFormat, activeChannel);
+            syncChannel();
+        }
     }
 
     private void handleHelp() {
@@ -286,7 +290,7 @@ public class ClientHandler implements Runnable {
                 tempUsername = socketReader.readLine();
             }
         }
-        username = tempUsername;
+        username = tempUsername.trim();
         final String messageFormat = String.format("Server -> %s has connected and has joined %s channel", username, activeChannel);
         clientHandlers.broadcastMessage(messageFormat, activeChannel);
         log.info("{} has connected and has joined {} channel", username, activeChannel);

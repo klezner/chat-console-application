@@ -42,6 +42,7 @@ public class MessageReader implements Runnable {
                     }
                 }
             } catch (IOException | InterruptedException e) {
+                printer.println("Server -> Connection with server lost");
                 close();
             }
         }

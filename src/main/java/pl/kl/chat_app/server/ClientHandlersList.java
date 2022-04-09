@@ -50,6 +50,7 @@ public class ClientHandlersList implements ClientHandlers {
         return clientHandlers.stream()
                 .map(ClientHandler::getUsername)
                 .filter(Objects::nonNull)
+                .filter(username -> !username.equalsIgnoreCase(DEFAULT_USERNAME))
                 .sorted()
                 .collect(Collectors.joining(" "));
     }
