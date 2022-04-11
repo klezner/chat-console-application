@@ -237,19 +237,21 @@ public class ClientHandler implements Runnable {
     private void handleHelp() {
         final String messageFormat = String.format("Available commands:%n" +
                         "%s -> about me (username, subscribed channels, active channel)%n" +
-                        "%s -> get all users connected%n" +
-                        "%s -> get all active channels%n" +
-                        "%s -> get all my channel history%n" +
+                        "%s -> get all users%n" +
+                        "%s -> get all channels%n" +
+                        "%s -> get my channel history%n" +
+                        "%s -> get all server files%n" +
                         "%s %s channel_name -> create and join new channels or join channel if exists (still subscribed)%n" +
                         "%s %s -> leave channel (unsubscribe) and delete if there is no clients%n" +
                         "%s %s -> get all channel users (subscribing channel)%n" +
                         "%s file_name -> upload file to server%n" +
-                        "%s file_name -> download file from server%n" +
+                        "/downlo@d file_name -> download file to server%n" + // bug with word "download"
                         "%s -> disconnect server and close client",
                 Actions.ME.getInput(), Actions.ALL_USERS.getInput(), Actions.ALL_CHANNELS.getInput(),
-                Actions.CHANNEL.getInput(), Actions.CHAT_HISTORY.getInput(), Actions.CHANNEL_JOIN.getInput(),
-                Actions.CHANNEL.getInput(), Actions.CHANNEL_LEAVE.getInput(), Actions.CHANNEL.getInput(),
-                Actions.ALL_USERS.getInput(), Actions.UPLOAD_FILE.getInput(), Actions.DOWNLOAD_FILE.getInput(),
+                Actions.CHAT_HISTORY.getInput(), Actions.ALL_FILES.getInput(), Actions.CHANNEL.getInput(),
+                Actions.CHANNEL_JOIN.getInput(), Actions.CHANNEL.getInput(), Actions.CHANNEL_LEAVE.getInput(),
+                Actions.CHANNEL.getInput(), Actions.ALL_USERS.getInput(), Actions.UPLOAD_FILE.getInput(),
+//                Actions.DOWNLOAD_FILE.getInput(),
                 Actions.CLOSE_CONNECTION.getInput());
         printMessage("Server -> " + messageFormat);
     }

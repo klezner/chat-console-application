@@ -5,7 +5,8 @@ Założenia ogólne
 1. Projekt realizowany samodzielnie przez wszystkich uczestników kursu
 2. Nieprzekraczalny termin oddania projektu to 10.04.2022
 3. Stworzony kod powinien być opublikowany na repozytorium git np. GitHub
-4. Realizując projekt używamy wyłącznie standardowego SDK Java 11 tzn. nie korzystamy z frameworków, ani zewnętrznych
+4. Realizując projekt używamy wyłącznie standardowego **SDK Java 11** tzn. nie korzystamy z frameworków, ani
+   zewnętrznych
    bibliotek
 6. Ze względu na kolejność realizowanych zajęć testy jednostkowe nie są wymagane, ale mile widziane
 
@@ -49,10 +50,12 @@ wydajność całego rozwiązania.
 
 > **Available commands**
 >* ***clientMessage***
+>* **/help** - help
 >* **/me** - about me (username, subscribed channels, active channel)
 >* **/users** - get all users connected
 >* **/channels** - get all active channels
->* **/history** - get all my channel history
+>* **/history** - get my channel history
+>* **/files** - get all server files
 >* **/channel /join *channelName*** - create and join new channels or join channel if exists (still subscribed)
 >* **/channel /leave** - leave channel (unsubscribe) and delete if there is no clients
 >* **/channel /users** - get all channel users (subscribing channel)
